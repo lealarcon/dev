@@ -140,7 +140,7 @@ fi
 echo "# - done"
 echo
 
-BUILDNAME="BUILDS/`date +"%Y-%m-%d--%H-%M-%S"`"
+BUILDNAME="BUILDS/opendocker"
 echo "# make a home for this build"
 sayAndDo mkdir -p $BUILDNAME
 
