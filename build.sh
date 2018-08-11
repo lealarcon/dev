@@ -30,7 +30,7 @@ installIfMissing () {
 	dpkg -s $@ > /dev/null
 	if [ $? -ne 0 ]; then
 		echo "# - missing $@, installing dependency"
-		sudo apt-get install $@ -y
+		 apt-get install $@ -y
 		if [ $? -ne 0 ]; then
 			echo "# - ERROR : $@ package was unable to be installed"
 			exit 1
